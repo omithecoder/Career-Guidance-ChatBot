@@ -1,0 +1,266 @@
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Career Guidance Chatbot</title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">&ndash;&gt;-->
+<!--&lt;!&ndash;    <style>&ndash;&gt;-->
+<!--&lt;!&ndash;        body {&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: a5a5a5;&ndash;&gt;-->
+<!--&lt;!&ndash;            font-family: 'Arial', sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .container {&ndash;&gt;-->
+<!--&lt;!&ndash;            max-width: 670px;&ndash;&gt;-->
+<!--&lt;!&ndash;            height: 35rem;&ndash;&gt;-->
+<!--&lt;!&ndash;            margin: 40px auto;&ndash;&gt;-->
+<!--&lt;!&ndash;            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);&ndash;&gt;-->
+<!--&lt;!&ndash;            border-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;            position: relative;left:15rem;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .chat-container {&ndash;&gt;-->
+<!--&lt;!&ndash;            overflow-y: auto;&ndash;&gt;-->
+<!--&lt;!&ndash;            width: 40rem;&ndash;&gt;-->
+<!--&lt;!&ndash;            height: 22.5rem;&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: #ffffff;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-top-left-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-top-right-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .message {&ndash;&gt;-->
+<!--&lt;!&ndash;            margin-bottom: 15px;&ndash;&gt;-->
+<!--&lt;!&ndash;            display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;            flex-direction: column;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .user-message {&ndash;&gt;-->
+<!--&lt;!&ndash;            text-align: right;&ndash;&gt;-->
+<!--&lt;!&ndash;            color: #007bff;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .bot-message {&ndash;&gt;-->
+<!--&lt;!&ndash;            text-align: left;&ndash;&gt;-->
+<!--&lt;!&ndash;            color: #28a745;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .input-container {&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;            position: relative;top: 1rem;&ndash;&gt;-->
+
+<!--&lt;!&ndash;            background-color: rgb(190, 190, 190);&ndash;&gt;-->
+<!--&lt;!&ndash;            border-bottom-left-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-bottom-right-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;            display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        #user-input {&ndash;&gt;-->
+<!--&lt;!&ndash;            flex: 1;&ndash;&gt;-->
+<!--&lt;!&ndash;            padding: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;            border: 1px solid #ced4da;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-radius: 4px;&ndash;&gt;-->
+<!--&lt;!&ndash;            box-sizing: border-box;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        #send-btn {&ndash;&gt;-->
+<!--&lt;!&ndash;            width: 100px;&ndash;&gt;-->
+<!--&lt;!&ndash;            margin-left: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        #send-btn:hover {&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: #007bff;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        h1 {&ndash;&gt;-->
+<!--&lt;!&ndash;            color: #007bff;&ndash;&gt;-->
+<!--&lt;!&ndash;            text-align: center;&ndash;&gt;-->
+<!--&lt;!&ndash;            margin-bottom: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        .bot-avatar {&ndash;&gt;-->
+<!--&lt;!&ndash;            width: 40px;&ndash;&gt;-->
+<!--&lt;!&ndash;            height: 40px;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-radius: 50%;&ndash;&gt;-->
+<!--&lt;!&ndash;            margin-right: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;    </style>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container"  >&ndash;&gt;-->
+<!--&lt;!&ndash;        <h1 style="padding:14px;">Career Guidance Chatbot</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="chat-container" id="chat-container">&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; Chat messages will appear here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="input-container">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input type="text" id="user-input" placeholder="Type your message..." />&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn btn-primary" id="send-btn" onclick="sendMessage()">Send</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="col-md-6 img-container" style="position:relative; bottom: 30rem; left: 3rem;">&ndash;&gt;-->
+<!--&lt;!&ndash;        <img src="/static/chatbotpng.png" alt="Chatbot Image" height="75%" width="75%">&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <script>&ndash;&gt;-->
+<!--&lt;!&ndash;        function sendMessage() {&ndash;&gt;-->
+<!--&lt;!&ndash;            var userInput = document.getElementById("user-input").value;&ndash;&gt;-->
+
+<!--&lt;!&ndash;            if (userInput.trim() === "") {&ndash;&gt;-->
+<!--&lt;!&ndash;                return;&ndash;&gt;-->
+<!--&lt;!&ndash;            }&ndash;&gt;-->
+
+<!--&lt;!&ndash;            appendMessage("user", userInput);&ndash;&gt;-->
+
+<!--&lt;!&ndash;            // Simulate a response from the chatbot (you can replace this with your actual chatbot logic)&ndash;&gt;-->
+<!--&lt;!&ndash;            setTimeout(function () {&ndash;&gt;-->
+<!--&lt;!&ndash;                var botResponse = "This is a simulated response from the chatbot.";&ndash;&gt;-->
+<!--&lt;!&ndash;                appendMessage("bot", botResponse);&ndash;&gt;-->
+<!--&lt;!&ndash;            }, 500);&ndash;&gt;-->
+
+<!--&lt;!&ndash;            // Clear the user input&ndash;&gt;-->
+<!--&lt;!&ndash;            document.getElementById("user-input").value = "";&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;        function appendMessage(sender, message) {&ndash;&gt;-->
+<!--&lt;!&ndash;            var chatContainer = document.getElementById("chat-container");&ndash;&gt;-->
+<!--&lt;!&ndash;            var messageDiv = document.createElement("div");&ndash;&gt;-->
+<!--&lt;!&ndash;            messageDiv.classList.add("message");&ndash;&gt;-->
+
+<!--&lt;!&ndash;            if (sender === "user") {&ndash;&gt;-->
+<!--&lt;!&ndash;                messageDiv.classList.add("user-message");&ndash;&gt;-->
+<!--&lt;!&ndash;            } else {&ndash;&gt;-->
+<!--&lt;!&ndash;                messageDiv.classList.add("bot-message");&ndash;&gt;-->
+<!--&lt;!&ndash;            }&ndash;&gt;-->
+
+<!--&lt;!&ndash;            messageDiv.innerHTML = `&ndash;&gt;-->
+<!--&lt;!&ndash;                <div style="display: flex; align-items: center;">&ndash;&gt;-->
+<!--&lt;!&ndash;                    ${sender === "bot" ? <img src="bot-avatar.png" alt="Bot Avatar" class="bot-avatar"> : ""}&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div>${message}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            `;&ndash;&gt;-->
+<!--&lt;!&ndash;            chatContainer.appendChild(messageDiv);&ndash;&gt;-->
+
+<!--&lt;!&ndash;            // Scroll to the bottom of the chat container&ndash;&gt;-->
+<!--&lt;!&ndash;            chatContainer.scrollTop = chatContainer.scrollHeight;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;    </script>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>ChatBot</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div id="chat-container">-->
+<!--        <div id="chat-display"></div>-->
+<!--        <input type="text" id="user-input" placeholder="Type here...">-->
+<!--        <button onclick="sendMessage()">Send</button>-->
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        function sendMessage() {-->
+<!--            var userMessage = document.getElementById('user-input').value;-->
+<!--            document.getElementById('chat-display').innerHTML += '<p><strong>You:</strong> ' + userMessage + '</p>';-->
+
+<!--            // Send the user message to the server-->
+<!--            fetch('/get_response', {-->
+<!--                method: 'POST',-->
+<!--                body: new URLSearchParams({'user_message': userMessage}),-->
+<!--                headers: {'Content-Type': 'application/x-www-form-urlencoded'}-->
+<!--            })-->
+<!--            .then(response => response.json())-->
+<!--            .then(data => {-->
+<!--                var botMessage = data.bot_message;-->
+<!--                document.getElementById('chat-display').innerHTML += '<p><strong>Bot:</strong> ' + botMessage + '</p>';-->
+<!--            });-->
+
+<!--            // Clear the input field-->
+<!--            document.getElementById('user-input').value = '';-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #chat-container {
+        position: relative;right: 3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 520px;
+            height:35rem;
+            background-color: rgb(204, 204, 204);
+            padding: 20px;
+            text-align: center;
+        }
+        #chat-display {
+            height: 27rem;
+            overflow-y: auto;
+            border: 1px solid #ced4da;
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        #user-input {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #send-btn {
+            width: 100px;
+            margin-left: 10px;
+            height: 45px;
+        }
+        #send-btn:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<div class="col-md-6 img-container" style="position:relative; top: 6rem; left: 3rem;">
+        <img src="/static/chatbotpng.png" alt="Chatbot Image" height="85%" width="85%">
+    </div>
+
+    <div id="chat-container">
+        <div id="chat-display"></div>
+        <input type="text" id="user-input" placeholder="Type here...">
+        <button class="btn btn-primary" id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById('user-input').value;
+            document.getElementById('chat-display').innerHTML += '<p><strong>You:</strong> ' + userMessage + '</p>';
+
+            // Send the user message to the server
+            fetch('/get_response', {
+                method: 'POST',
+                body: new URLSearchParams({'user_message': userMessage}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessage = data.bot_message;
+                document.getElementById('chat-display').innerHTML += '<p><strong>Bot:</strong> ' + botMessage + '</p>';
+            });
+
+            // Clear the input field
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>

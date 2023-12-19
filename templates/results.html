@@ -1,0 +1,145 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Gallup StrengthsFinder Test Results</title>-->
+<!--    <style>-->
+<!--        .charts {-->
+<!--            display: flex;-->
+<!--            justify-content: space-between;-->
+<!--        }-->
+<!--        .chart {-->
+<!--            flex-basis: 48%; /* Adjust the width as needed */-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Gallup StrengthsFinder Test Results</h1>-->
+<!--    <h2>Top 3 Strengths:</h2>-->
+<!--    <ul>-->
+<!--        {% for strength, score in top_strengths %}-->
+<!--            <li>{{ strength }} ({{ score }}/5)</li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--    <h2>Strengths Distribution:</h2>-->
+<!--    <div class="charts">-->
+<!--        <div class="chart">-->
+<!--            <img src="data:image/png;base64,{{ img_base64 }}" alt="Strengths Distribution Pie Chart">-->
+<!--        </div>-->
+<!--        <div class="chart">-->
+<!--            <img src="data:image/png;base64,{{ academic_img_base64 }}" alt="Academic Scores Distribution Pie Chart">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <h2>Recommended Career Options</h2>-->
+<!--    <ul>-->
+<!--        {% for career_option in matched_careers %}-->
+<!--            <li>{{ career_option }}</li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--&lt;!&ndash;Add a text field in which user enter the career option name of which user wants more information&ndash;&gt;-->
+<!--    <form method="POST" action="/GetInfo">-->
+<!--        <input type="text" name="career_option" placeholder="Enter the career option name">-->
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+
+
+
+
+
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallup StrengthsFinder Test Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: black;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .charts {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .chart {
+            flex-basis: 48%;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            width: 20%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color:rgb(0, 123, 255);color:white;font-size:3rem; padding:20px;border-radius:1rem;"> Test Results</h1>
+    <h2>Top 3 Strengths:</h2>
+    <ul>
+        {% for strength, score in top_strengths %}
+            <li>{{ strength }} ({{ score }}/5)</li>
+        {% endfor %}
+    </ul>
+    <h2>Strengths Distribution:</h2>
+    <div class="charts">
+        <div class="chart">
+            <img src="data:image/png;base64,{{ img_base64 }}" alt="Strengths Distribution Pie Chart" class="img-fluid">
+        </div>
+        <div class="chart">
+            <img src="data:image/png;base64,{{ academic_img_base64 }}" alt="Academic Scores Distribution Pie Chart" class="img-fluid">
+        </div>
+    </div>
+    <h2>Recommended Career Options</h2>
+    <ul>
+        {% for career_option in matched_careers %}
+            <li>{{ career_option }}</li>
+        {% endfor %}
+    </ul>
+    <form method="POST" action="/GetInfo">
+        <input type="text" name="career_option" placeholder="Enter the career option name" required>
+        <input type="submit" value="Get More Information" class="btn btn-primary">
+    </form>
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

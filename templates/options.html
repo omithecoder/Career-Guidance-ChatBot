@@ -1,0 +1,107 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Career Guidance Options</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Hello, {{ UN }}!</h1>-->
+<!--    <p>Choose from the following career guidance options:</p>-->
+<!--    <form method="POST" action="/options">-->
+<!--    <input type="hidden" name="user_name"  value={{UN}}>-->
+<!--        <br>-->
+<!--        <label>-->
+<!--            <input type="radio" name="choice" value="1"> Complete Career Guidance (for beginners)-->
+<!--        </label><br>-->
+<!--        <label>-->
+<!--            <input type="radio" name="choice" value="2"> Career Path Counseling (for those looking for personalized guidance)-->
+<!--        </label><br>-->
+<!--        <label>-->
+<!--            <input type="radio" name="choice" value="3"> Career-Related Topics (for exploring specific career concerns)-->
+<!--        </label><br>-->
+<!--         &lt;!&ndash; Rest of the form fields &ndash;&gt;-->
+<!--    <input type="submit" value="Next">-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Options</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 750px;
+            margin: 140px auto;
+            text-align: left;
+            padding-left: 20px;
+        }
+        h1 {
+            color: #007bff;
+            text-align: left;
+        }
+        p {
+            color: #6c757d;
+            text-align: left;
+        }
+        form {
+            margin-top: 15px;
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .img-container {
+            text-align: right;
+            margin-top: -70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4">Hello, {{ UN }}!</h1>
+                <p class="lead">Choose from the following career guidance options:</p>
+                <form method="POST" action="/options">
+                    <input type="hidden" name="user_name" value="{{ UN }}">
+                    <div class="form-check">
+                        <input type="radio" name="choice" id="option1" class="form-check-input" value="1">
+                        <label for="option1" class="form-check-label">Complete Career Guidance (for beginners)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="choice" id="option2" class="form-check-input" value="2">
+                        <label for="option2" class="form-check-label">Career Path Counseling (for those looking for personalized guidance)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="choice" id="option3" class="form-check-input" value="3">
+                        <label for="option3" class="form-check-label">Career-Related Topics (for exploring specific career concerns)</label>
+                    </div>
+                    <!-- Rest of the form fields -->
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 img-container">
+                <img src="/static/chatbot.png" alt="Chatbot Image" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I help you with?"]
+    },
+    {
+      "tag": "career_options",
+      "patterns": ["What careers are available?", "Tell me about career options", "What jobs can I pursue?"],
+      "responses": [
+        "There are various exciting career options! Some include Software Development, Marketing, Nursing, Data Science, Teaching, Graphic Design, Finance, Environmental Science, Culinary Arts, and Civil Engineering."
+      ]
+    },
+    {
+      "tag": "software_development",
+      "patterns": ["Tell me about software development", "What is a software developer?", "How to become a programmer?"],
+      "responses": [
+        "Software development involves creating applications and systems. To become a programmer, you can start by learning programming languages such as Python or Java, and explore areas like web development or software engineering."
+      ]
+    },
+    {
+      "tag": "marketing",
+      "patterns": ["What is marketing?", "Tell me about a career in marketing", "Marketing job opportunities"],
+      "responses": [
+        "Marketing is about promoting products or services. A career in marketing can include roles like Digital Marketer, Marketing Manager, or Market Research Analyst. It's a dynamic field with various opportunities."
+      ]
+    },
+    {
+      "tag": "nursing",
+      "patterns": ["Tell me about nursing", "What does a nurse do?", "How to become a nurse?"],
+      "responses": [
+        "Nursing involves caring for individuals' health. To become a nurse, you typically need to pursue a nursing degree, gain clinical experience, and obtain licensure. Nursing offers diverse roles in hospitals, clinics, and more."
+      ]
+    },
+    {
+      "tag": "data_science",
+      "patterns": ["What is data science?", "Tell me about a career in data science", "Data scientist roles"],
+      "responses": [
+        "Data science involves analyzing and interpreting complex data. Careers in data science include Data Scientist, Data Analyst, and Machine Learning Engineer. Skills in programming and statistics are valuable in this field."
+      ]
+    },
+    {
+      "tag": "teaching",
+      "patterns": ["Tell me about teaching", "What does a teacher do?", "How to become a teacher?"],
+      "responses": [
+        "Teaching is about imparting knowledge. To become a teacher, you usually need a teaching degree or certification. There are opportunities in schools, colleges, and online education platforms."
+      ]
+    },
+    {
+      "tag": "graphic_design",
+      "patterns": ["What is graphic design?", "Tell me about a career in graphic design", "Graphic designer roles"],
+      "responses": [
+        "Graphic design involves creating visual content. Careers in graphic design include Graphic Designer, UX/UI Designer, and Art Director. Developing skills in design software is essential in this field."
+      ]
+    },
+    {
+      "tag": "finance",
+      "patterns": ["Tell me about finance", "What does a financial analyst do?", "Finance career opportunities"],
+      "responses": [
+        "Finance deals with managing money. Careers in finance include Financial Analyst, Investment Banker, and Accountant. Strong analytical and mathematical skills are crucial in this field."
+      ]
+    },
+    {
+      "tag": "environmental_science",
+      "patterns": ["What is environmental science?", "Tell me about a career in environmental science", "Environmental scientist roles"],
+      "responses": [
+        "Environmental science focuses on studying the environment. Careers include Environmental Scientist, Conservationist, and Environmental Consultant. Addressing environmental issues is a key aspect of these roles."
+      ]
+    },
+    {
+      "tag": "culinary_arts",
+      "patterns": ["Tell me about culinary arts", "What does a chef do?", "Culinary arts career opportunities"],
+      "responses": [
+        "Culinary arts involve the art of cooking. Careers include Chef, Sous Chef, and Pastry Chef. Culinary schools and hands-on experience are essential for building a successful career in this field."
+      ]
+    },
+    {
+      "tag": "civil_engineering",
+      "patterns": ["What is civil engineering?", "Tell me about a career in civil engineering", "Civil engineer roles"],
+      "responses": [
+        "Civil engineering involves designing and managing infrastructure projects. Careers include Civil Engineer, Structural Engineer, and Transportation Engineer. Strong problem-solving skills are crucial in this field."
+      ]
+    }
+  ]
+}

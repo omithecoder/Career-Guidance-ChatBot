@@ -1,0 +1,341 @@
+{
+  "tag": "greeting",
+  "patterns": [
+    "Hi",
+    "Hey",
+    "Hello",
+    "Good day",
+    "Greetings",
+    "Howdy",
+    "Hi there",
+    "Greetings and salutations",
+    "Hello, what's up?",
+    "Hey, how are you?",
+    "What's going on?",
+    "Hey, what's up?"
+  ],
+  "responses": [
+    "Hello! How can I assist you?",
+    "Hi there! How can I help?",
+    "Hey! How may I assist you?",
+    "Greetings! How can I help?",
+    "Hi! What brings you here?"
+  ]
+},
+{
+  "tag": "bot_identity",
+  "patterns": [
+    "What's your name?",
+    "Who are you?",
+    "Tell me your name",
+    "What should I call you?",
+    "Your name, please",
+    "Can you introduce yourself?",
+    "What do I call you?",
+    "Name?",
+    "Who am I talking to?",
+    "Identify yourself",
+    "What's your identity?"
+  ],
+  "responses": [
+    "You can call me ChatGPT.",
+    "I go by ChatGPT.",
+    "I'm ChatGPT.",
+    "Call me ChatGPT."
+  ]
+},
+{
+  "tag": "purpose",
+  "patterns": [
+    "What do you do?",
+    "Tell me about your purpose",
+    "How can you help me?",
+    "What is your role?",
+    "Explain your function",
+    "What's your main job?",
+    "How do you assist?",
+    "Purpose of your existence",
+    "Can you help me?",
+    "What is your role here?",
+    "What's your purpose?"
+  ],
+  "responses": [
+    "I provide info on various careers.",
+    "I guide you through career choices.",
+    "I assist in exploring careers.",
+    "I offer insights into careers."
+  ]
+},
+{
+  "tag": "neutral",
+  "patterns": [
+    "I'm neutral",
+    "Feeling okay",
+    "Not much",
+    "So-so",
+    "I'm fine",
+    "I'm neither good nor bad",
+    "Fair enough",
+    "Just average",
+    "I'm alright",
+    "Nothing special",
+    "Meh"
+  ],
+  "responses": [
+    "That's okay. If you have questions, let me know.",
+    "Neutral is fine. Anything on your mind?",
+    "It's alright. Need info or have questions?"
+  ]
+},
+{
+  "tag": "excited",
+  "patterns": [
+    "I'm excited",
+    "Feeling enthusiastic",
+    "Can't wait",
+    "Thrilled",
+    "I'm pumped",
+    "Ecstatic",
+    "Over the moon",
+    "Full of anticipation",
+    "Ready for action",
+    "Eagerly looking forward",
+    "I'm thrilled!"
+  ],
+  "responses": [
+    "Great energy! How can I contribute?",
+    "Excitement is awesome! What's happening?",
+    "I love the energy! Share the joy!"
+  ]
+},
+{
+  "tag": "stressed",
+  "patterns": [
+    "I'm stressed",
+    "Feeling overwhelmed",
+    "Under a lot of pressure",
+    "Stressed out",
+    "I can't handle this",
+    "Feeling stressed",
+    "Too much to handle",
+    "Pressure is getting to me",
+    "Feeling tense",
+    "Overwhelmed with stress",
+    "Stressful day"
+  ],
+  "responses": [
+    "I understand. Take a deep breath. How can I help?",
+    "Here to help you manage stress. Let's tackle it together.",
+    "Stress happens. Let's find ways to ease it."
+  ]
+},
+{
+  "tag": "sad",
+  "patterns": [
+    "I'm sad",
+    "Feeling down",
+    "Not in a good mood",
+    "Feeling blue",
+    "I'm upset",
+    "Having a bad day",
+    "Feeling low",
+    "Down in the dumps",
+    "Feeling melancholy",
+    "Suffering from sadness",
+    "Feeling downhearted"
+  ],
+  "responses": [
+    "Sorry to hear that. I'm here to talk if you need.",
+    "I'm here for you. Anything I can do?",
+    "It's okay to feel this way. How can I help?"
+  ]
+},
+{
+  "tag": "happy",
+  "patterns": [
+    "I'm happy",
+    "Feeling great",
+    "I'm excited",
+    "Happy to be here",
+    "I'm in a good mood",
+    "Life is good",
+    "Feeling cheerful",
+    "Having a great day",
+    "Full of joy",
+    "Feeling positive",
+    "I'm delighted"
+  ],
+  "responses": [
+    "Wonderful! How can I make your day better?",
+    "Great to hear! How can I assist you further?",
+    "Fantastic! If you have questions, ask away."
+  ]
+},
+{
+  "tag": "high_paying_careers",
+  "patterns": [
+    "Which jobs offer fat paychecks?",
+    "Tell me about the high rollers",
+    "What are the top money-making careers?",
+    "Which professions have the juiciest salaries?",
+    "Show me high-paying jobs",
+    "I want a well-paying job",
+    "Careers with high salaries",
+    "Tell me about lucrative professions",
+    "Jobs with great earning potential",
+    "What careers pay the most?",
+    "Top-paying jobs"
+  ],
+  "responses": [
+    "Unlock potential in IT, Finance, Medicine, and Engineering! Consider roles like Software Engineer, Investment Banker, Surgeon, and Petroleum Engineer.",
+    "Dive into lucrative careers! Think of Data Scientist, Investment Analyst, Neurosurgeon, and Aerospace Engineer for substantial rewards.",
+    "Discover high-paying avenues! Consider AI Research, Private Equity, Plastic Surgery, and Systems Engineering for lucrative opportunities."
+  ]
+},
+{
+  "tag": "best_careers",
+  "patterns": [
+    "What are the coolest jobs?",
+    "Tell me about the dream jobs",
+    "Which careers are considered the best?",
+    "What are the top-rated professions?",
+    "Best careers for the future",
+    "I want a top-rated job",
+    "Show me the best professions",
+    "Coolest careers out there",
+    "Dream jobs in 2023",
+    "Top careers to pursue",
+    "Best jobs"
+  ],
+  "responses": [
+    "Discover best careers based on passions! Explore Software Development, Healthcare, Financial Services, and Environmental Science.",
+    "Uncover your dream job in AI, Renewable Energy, Digital Marketing, and Sustainable Agriculture.",
+    "Navigate the sea of opportunities! Consider Robotics, Telemedicine, UX/UI Design, and Green Technology."
+  ]
+},
+{
+  "tag": "top_careers_2023",
+  "patterns": [
+    "What are the hottest jobs in 2023?",
+    "Which careers are booming this year?",
+    "Tell me about the coolest jobs in 2023",
+    "What professions are on the rise in 2023?",
+    "Show me trending careers",
+    "Hottest professions in 2023",
+    "Jobs in demand for 2023",
+    "Most sought-after careers this year",
+    "Top careers to pursue in 2023",
+    "I want a trending job",
+    "Hot careers in 2023"
+  ],
+  "responses": [
+    "In 2023, explore careers in AI, Data Science, Renewable Energy, and Cybersecurity for innovative opportunities.",
+    "Future-proof with careers like Quantum Computing, Sustainable Design, Digital Marketing, and Virtual Reality.",
+    "Dive into fields like Biotechnology, Space Exploration, UX/UI Design, and E-commerce for dynamic opportunities in 2023."
+  ]
+},
+{
+  "tag": "internship_info",
+  "patterns": [
+    "How can I find internships?",
+    "Tell me about internship opportunities.",
+    "Which companies offer internships for students?",
+    "Where can I get internship information?",
+    "Internship search tips",
+    "Guide me on finding internships",
+    "Internship programs for students",
+    "How to secure a good internship?",
+    "Finding internships in my field",
+    "I need information on internships",
+    "Internship search advice"
+  ],
+  "responses": [
+    "Find internships by searching online, networking, and using your college's career services.",
+    "Explore opportunities on LinkedIn, Indeed, and Internshala. Check university career fairs for more options.",
+    "Many companies offer internships. Explore opportunities at well-known companies and attend university career fairs."
+  ]
+},
+{
+  "tag": "networking",
+  "patterns": [
+    "How can I build a professional network?",
+    "Tell me about networking for career growth.",
+    "What are effective networking strategies?",
+    "Networking tips for professionals",
+    "Guide me on professional networking",
+    "Building a strong professional network",
+    "Effective networking for career success",
+    "Networking strategies that work",
+    "I need advice on building a network",
+    "Professional networking tips",
+    "Networking advice"
+  ],
+  "responses": [
+    "Build a network by attending events, connecting online, and informational interviews.",
+    "Cultivate relationships, seek mentorship, and offer your expertise for career growth.",
+    "Effective networking includes attending events, joining organizations, and using platforms like LinkedIn."
+  ]
+},
+{
+  "tag": "job_market_trends",
+  "patterns": [
+    "What are the current job market trends?",
+    "Tell me about emerging job opportunities.",
+    "Which industries are growing in the job market?",
+    "Job market trends for the future",
+    "Guide me on job market trends",
+    "Current employment trends",
+    "Emerging job opportunities in 2023",
+    "Industries with job market growth",
+    "Job market insights",
+    "Tell me about the latest job opportunities",
+    "Job market trends"
+  ],
+  "responses": [
+    "Current job market trends include growth in technology, healthcare, and sustainability.",
+    "Emerging opportunities in AI, renewable energy, and digital marketing. Stay informed about industry trends.",
+    "Industries experiencing growth include tech, healthcare, and green energy. Align your skills with these sectors."
+  ]
+},
+{
+  "tag": "entrepreneurship_info",
+  "patterns": [
+    "Tell me about starting a business.",
+    "How can I become an entrepreneur?",
+    "What are the challenges of entrepreneurship?",
+    "Guide me on entrepreneurship",
+    "Starting a small business",
+    "Becoming a successful entrepreneur",
+    "Entrepreneurship guide for beginners",
+    "Challenges in starting a business",
+    "I want to start my own business",
+    "Entrepreneurial journey advice",
+    "Starting a business tips"
+  ],
+  "responses": [
+    "Starting a business involves identifying a niche, creating a plan, and securing funding. It requires dedication and resilience.",
+    "Become an entrepreneur by developing a unique idea, understanding your market, and taking calculated risks. Seek mentorship for guidance.",
+    "Entrepreneurship comes with challenges like financial risk and uncertainty. Overcoming them requires perseverance and adaptability."
+  ]
+},
+{
+  "tag": "work_life_balance",
+  "patterns": [
+    "How to maintain a work-life balance?",
+    "Tell me about work-life balance in different careers.",
+    "Which jobs offer a good work-life balance?",
+    "Guide me on work-life balance",
+    "Balancing work and personal life",
+    "Maintaining a healthy work-life balance",
+    "Best careers for work-life balance",
+    "Work-life harmony tips",
+    "I want a job with work-life balance",
+    "Achieving work-life balance in a career",
+    "Work-life balance advice"
+  ],
+  "responses": [
+    "Maintain balance by setting boundaries and prioritizing self-care.",
+    "Work-life balance varies. Jobs in healthcare, education, and certain tech companies often offer good balance.",
+    "Explore careers in healthcare, education, and select tech companies for better work-life balance. Research companies with positive cultures."
+  ]
+}
